@@ -1,0 +1,380 @@
+/* VERHALEN OP OVERZICHTSPAGINA -  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* ==================================
+        whole page in html
+=====================================*/
+    html {
+        font-family: "trebuchet ms", sans-serif;
+    }
+    .index {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f3e5d8;
+    }
+    header {
+        background-color: white;
+        width: 100%;
+    }
+  /* ==================================
+=            Teksten                =
+=====================================*/
+
+h1 {
+    font-size: 2.5em;
+    color: #00d66c;
+    text-align: center;
+    text-shadow: 10px 5px #f3e5d8;
+    padding: .5em;
+    transform: rotate(10deg)
+}
+h2 {
+    padding: .5em;
+    border-radius: .5em;
+    color: #00d66c;
+    background-color: white;
+    text-align: center;
+    margin: .5em;
+    
+}
+h3 {
+    color: white;
+    background-color: #ff3268;
+    border-radius: .5em;
+    padding: .5em;
+}
+h4 {
+    background-color: #f3e5d8;
+    border-radius: .5em;
+    padding: .5em;
+}
+h5 {
+    background-color: #f3e5d8;
+    margin: .5em;
+    border-radius: .5em;
+    padding: .5em;
+}
+p {
+    transform: skewX(5deg);
+}
+section > p {
+    color: white;
+    background-color: #2802a0;
+    border-radius: .5em;
+    padding: .5em;
+    margin: .5em;
+}
+/* ==================================
+=            Navigatie               =
+=====================================*/
+
+nav {
+    border-radius: .5em;
+    padding: .5em;
+    margin-top: .5em;
+}
+nav > ul > li > a {
+    color: white;
+}
+ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+}
+/*====================================
+Navigation try http://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_text
+======================================*/
+
+.dropdown {
+    position: left;
+    display: inline-block;
+    background-color: #ff3268;
+    width: 40%;
+    color: white;
+    text-align: center;
+}
+.dropdown-content {
+    display: none;
+    color: #00d66c;
+    background-color: #ff3268;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: relative;
+    transition: 0.5sec  ease-in-out;
+}
+/* ==================================
+=            Linkjes               =
+=====================================*/
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #00d66c;
+}
+/* ==================================
+=            Searchbox              =
+=====================================*/
+
+input[type=search] {
+    width: 8em;
+    height: 2em;
+    padding: .5em;
+    margin: .5em;
+    box-sizing: border-box;
+    border: .1em solid #2802a0;
+    border-radius: .5em;
+    font-size: 1em;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+input[type=search]:focus {
+    width: 85%;
+    color: black;
+}
+input {
+    background-color: #2802a0;
+    border-radius: .5em;
+    color: white;
+    padding: 1em;
+    border: 2em;
+    font-family: "trebuchet ms", sans-serif;
+}
+
+
+
+/* ==================================
+=              Aside                =
+=====================================*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+aside > a {
+    color: black;
+    background-color: white;
+    margin-left: .5em;
+    padding: .5em;
+}
+aside > div > form > p > a {
+    color: white;
+    border-radius: .5em;
+}
+
+/* ==================================
+=            Filteren               =
+=====================================*/
+
+.filteren {
+    color: white;
+    background-color: #2802a0;
+    border-radius: .5em;
+    padding: .5em;
+    margin: .5em;
+}
+/* ==================================
+=            Sorteren               =
+=====================================*/
+
+.sorterenop {
+    text-align: center;
+    height: 3em;
+    width: 43%;
+    color: white;
+    background-color: #ff3268;
+    font-size: .9em;
+    border-radius: .5em;
+    border: none;
+    box-shadow: .3em .3em .3em hsla(345, 80%, 40%, 0.78);
+}
+
+select {
+    text-align: center;
+    height: 3em;
+    width: 100%;
+    color: #ff3268;
+    background-color: white;
+    font-size: .9em;
+    border-radius: .5em;
+    border: none;
+}
+
+/* ==================================
+=            Article               =
+=====================================*/
+.artikelen{
+    margin: auto;
+}
+article {
+    background-color: white;
+    border-radius: .5em;
+    margin: .5em;
+    padding: .5em;
+}
+article p {
+    padding: .2em;
+    margin: .5em;
+}
+article footer {
+    margin: .5em;
+    padding: .5em;
+}
+
+.button {
+    /* flex-direction: row;
+flex-flow:wrap;*/
+    text-align: center;
+    height: 3em;
+    width: 40%;
+    color: white;
+    background-color: #ff3268;
+    font-size: .9em;
+    padding: .5em;
+    margin: .5em;
+    margin-left: .7em;
+    border-radius: .5em;
+    border: none;
+    box-shadow: .2em .2em .2em hsla(345, 80%, 90%, 1);
+}
+
+footer {
+    transform: skewY(5deg);
+}
+
+.artikelen {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 80%;
+}
+
+
+/* ==================================
+=            Profiel               =
+=====================================*/
+.profiel {
+    position: left;
+    background-color: #ff3268;
+    margin: .5em;
+    padding: .5em;
+    width: 40%;
+    border-radius: .5em;
+    text-align: center;
+    float: right;
+}
+.span{
+    color: white;
+}
+
+/* ==================================
+=            Registreren               =
+=====================================*/
+
+.formulier {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    color: #2802a0;
+    width: 30em;;
+    padding: .5em;
+    align-content: center;
+    position: relative;
+}
+
+form {
+    border-radius: .5em;
+    margin: auto;
+    padding: .5em;
+    box-decoration-break: none;
+    width: 22em;
+}
+fieldset {
+    margin: auto;
+    text-align: left;
+    width: 100%;
+    border: 0px;
+}
+
+.afbeelding{
+    background-image: url(img/book.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.registreren{
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: .5em;
+    margin-top: .5em;
+    
+}
+
+
+/* ==================================
+=            Responsive               =
+=====================================*/
+
+@media(max-width: 25em) {
+    .popular {
+        width: 23em;
+        height: auto;
+        object-position: center;
+        align-content: center;
+    }
+    
+    .filteren{
+        width: 20em;
+        align-content: center;
+    }
+    
+    .verhaal{
+        border-top-right-radius: .5em;
+        border-top-left-radius: .5em;
+    }
+    .onderkant{
+        border-bottom-left-radius: .5em;
+        border-bottom-right-radius: .5em;
+    }
+    
+    aside{
+        display: none;
+    }
+}
+.formulier {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    color: #2802a0;
+    width: 30em;;
+    padding: .5em;
+}
+
+form {
+    border-radius: .5em;
+    margin: auto;
+    padding: .5em;
+    box-decoration-break: none;
+    width: 22em;
+}
+fieldset {
+    margin: auto;
+    text-align: left;
+    width: 100%;
+    border: 0px;
+}
+
+label {
+    color: #2b3088;
+    display: block;
+    margin-top: 0.7em;
+}
+
+@media(min-width: 40em) {
+    .popular {
+        width: 18em;
+        
+    }
+    
+}

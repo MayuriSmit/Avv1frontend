@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale-1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Opdracht 4 | Barbara Mayuri Smit | 500727541 | Frontend Development</title>
+</head>
+
+<body class="afbeelding">
+    <header>
+       <span class="profiel"><a href="registreren.html" class="span">inloggen</a></span>
+        <nav class="dropdown">
+            <span>Menu</span>
+            <nav class="dropdown-content">
+                <ul>
+                    <li><a href="overzichtpagina.html"> Home </a></li>
+                    <li><a href="nieuwsteverhalen.html"> Nieuwste verhalen</a></li>
+                    <li><a href="populaireverhalen.html"> Populairste verhalen</a></li>
+                    <li><a href="langsteverhalen.html">langste verhalen</a></li>
+                    <li><a href="kortsteverhalen.html"> Kortste verhalen</a></li>
+                    <li><a href="meestereviews.html"> Meeste reviews </a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                    <li><a href="opdracht4.1.html"> Profiel</a></li>
+                    <li><a href="faq.html">  FAQ </a></li>
+                </ul>
+            </nav>
+        </nav>
+        <h1>Lezend Onderweg</h1>
+    </header>
+    <main class="aanmeldpagina">
+        <form>
+            <input type="search" name="search" placeholder="Zoeken op">
+            <input type="submit" value="find">
+        </form>
+
+        <form class="registreren">
+            <fieldset>
+                <legend>Persoonsgegevens:</legend>
+                <label for="voornaam"> Voornaam
+                    <input class="formulier" id="voornaam" placeholder="Rowan">
+                </label>
+                <label for="toevoegsel"> Toevoegsel:
+                    <input class="formulier" id="toevoegsel" type="text" placeholder="van der">
+                </label>
+                <label for="achternaam"> Achternaam:
+                    <input class="formulier" id="achternaam" type="text" placeholder="Smit">
+                </label>
+                <label for="geboortedatum"> Geboortedatum:
+                    <input class="formulier" id="geboortedatum" type="date">
+                </label>
+                <label for="email"> E-mailadres
+                    <input class="formulier" id="email" type="email" placeholder="jan@gmail.com">
+                </label>
+                <label for="reset"></label>
+                <input type="reset" value="reset">
+            </fieldset>
+        </form>
+
+        <form class="registreren">
+            <fieldset>
+                <legend>Adresggegevens:</legend>
+                <label for="straatnaam"> Straatnaam
+                    <input class="formulier" id="straatnaam" type="text" placeholder="straatnaam">
+                </label>
+                <label for="postcode"> Postcode
+                    <input class="formulier" id="postcode" type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="7021ZA">
+                </label>
+                <label for="huisnummer+toevoeging"> Huisnummer + Toevoeging
+                    <input class="formulier" id="huisnummer+toevoeging" type="number" placeholder="45-2">
+                </label>
+                <label for="telefoonnummer"> Telefoonnummer
+                    <input class="formulier" id="telefoonnummer" type="number" placeholder="0612345678">
+                </label>
+                <label for="reset"></label>
+                <input type="reset" value="reset">
+            </fieldset>
+        </form>
+
+        <form class="registreren">
+            <fieldset>
+                <legend>Gebruikersgegevens:</legend>
+                <label for="gebruikersnaam"> Gebruikersnaam
+                    <input class="formulier" id="gebruikersnaam" type="text" placeholder="Yolo">
+                </label>
+                <label for="wachtwoord"> Wachtwoord
+                    <input class="formulier" id="wachtwoord" type="password" placeholder="*******">
+                </label>
+                <label for="herhaalwachtwoord"> Herhaal Wachtwoord
+                    <input class="formulier" id="herhaalwachtwoord" type="password" placeholder="*******">
+                </label>
+                <label for="reset"></label>
+                <input type="reset" value="reset">
+            </fieldset>
+            <form action="index.html">
+                <button class="button">Registreren</button>
+            </form>
+        </form>
+    </main>
+</body>
+
+</html>
