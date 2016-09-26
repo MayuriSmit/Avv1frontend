@@ -158,7 +158,7 @@ aside > a {
     margin-left: .5em;
     padding: .5em;
 }
-aside > div > form > p > a {
+aside > section > form > p > a {
     color: white;
     border-radius: .5em;
 }
@@ -308,7 +308,6 @@ fieldset {
     background-color: rgba(255, 255, 255, 0.9);
     margin-bottom: .5em;
     margin-top: .5em;
-    
 }
 
 
